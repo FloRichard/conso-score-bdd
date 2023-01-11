@@ -9,7 +9,7 @@ psql -d "${default_db}" -c "create database ${db};"
 
 psql -d "${default_db}" -c "create user conso_score_user with encrypted password 'conso_score_user_pwd';"
 
-files=( "scheme.sql" "user.sql" )
+files=( "scheme.sql" "import.sql" "user.sql" )
 
 for file in "${files[@]}"
 do
