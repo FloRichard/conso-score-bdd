@@ -49,9 +49,9 @@ create table public.seller_product (
     seller_product_id uuid DEFAULT uuid_generate_v4() not null,
     product_id uuid not null,
     price real not null,
-    conso_score int not null,
+    conso_score int,
     bar_code int not null,
-    tax int not null,
+    tax int,
     constraint pk_seller_product primary key (seller_product_id)
 );
 
