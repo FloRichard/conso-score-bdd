@@ -14,4 +14,4 @@ grant select, insert, update, delete on table public.seller_product to conso_sco
 grant select, insert, update, delete on table public.product to conso_score_user;
 grant select, insert, update, delete on table public.category to conso_score_user;
 grant select, insert, update, delete on table public.expedition_transport to conso_score_user;
-
+grant select, insert, update, delete on table public.maker_stock to conso_score_user;
