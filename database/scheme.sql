@@ -66,7 +66,7 @@ create table public.product (
     product_id uuid DEFAULT uuid_generate_v4() not null,
     name varchar(128) not null,
     price real not null,
-    carbon_footprint int not null,
+    carbon_footprint real not null,
     quantity_unity varchar(128) not null,
     category_id uuid not null,
     expedition_transport_id uuid not null,
