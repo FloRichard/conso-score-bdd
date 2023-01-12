@@ -119,14 +119,14 @@ Seller stock holds the stock of seller products
 
 ### Seller product
 
-| Field             | Type | Description                                    |
-| ----------------- | ---- | ---------------------------------------------- |
-| seller_product_id | uuid | ID of the seller product                       |
-| product_id        | uuid | ID of the correspondind product from the maker |
-| price             | real | price of the product                           |
-| conso_score       | int  | The conso score of the product                 |
-| bar_code          | int  | Bar code of the product                        |
-| tax               | int  | Tax associated to the product in %             |
+| Field             | Type         | Description                                    |
+| ----------------- | ------------ | ---------------------------------------------- |
+| seller_product_id | uuid         | ID of the seller product                       |
+| product_id        | uuid         | ID of the correspondind product from the maker |
+| price             | real         | price of the product                           |
+| conso_score       | int          | The conso score of the product                 |
+| bar_code          | varchar(128) | Bar code of the product                        |
+| tax               | int          | Tax associated to the product in %             |
 
 Seller product represents a product stored in the seller stock. It embbed additionnal information over the original product. The `price` is the price of the product with the `tax` added.
 

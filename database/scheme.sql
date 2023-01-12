@@ -50,7 +50,7 @@ create table public.seller_product (
     product_id uuid not null,
     price real not null,
     conso_score int,
-    bar_code int not null,
+    bar_code varchar(128) not null,
     tax int,
     constraint pk_seller_product primary key (seller_product_id)
 );
